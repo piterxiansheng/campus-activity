@@ -6,6 +6,19 @@
         "navigationBarTitleText": "校园活动",
         "enablePullDownRefresh": true
       }
+    },
+    {
+      "path": "pages/activity/list",
+      "style": {
+        "navigationBarTitleText": "全部活动",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/activity/detail",
+      "style": {
+        "navigationBarTitleText": "活动详情"
+      }
     }
   ],
   "globalStyle": {
