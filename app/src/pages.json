@@ -19,6 +19,12 @@
       "style": {
         "navigationBarTitleText": "活动详情"
       }
+    },
+    {
+      "path": "pages/activity/signup",
+      "style": {
+        "navigationBarTitleText": "填写报名信息"
+      }
     }
   ],
   "globalStyle": {
