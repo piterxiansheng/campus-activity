@@ -76,6 +76,18 @@
       "style": {
         "navigationBarTitleText": "发布活动"
       }
+    },
+    {
+      "path": "pages/org/signups",
+      "style": {
+        "navigationBarTitleText": "报名名单"
+      }
+    },
+    {
+      "path": "pages/org/checkin",
+      "style": {
+        "navigationBarTitleText": "签到核销"
+      }
     }
   ],
   "globalStyle": {
