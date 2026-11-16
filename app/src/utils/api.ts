@@ -70,7 +70,7 @@ export const api = {
   orgDashboard: () => http.get<OrgDashboard>('/org/dashboard'),
   orgActivities: (params?: { page?: number; size?: number; status?: number }) =>
     http.get<PageResult<ActivityItem>>('/org/activities', params as Record<string, string | number>),
-  createActivity: (data: SaveActivityPayload) => http.post<{ id: number }>('/org/activities', data),
+  createActivity: (data: SaveActivityPayload) => http.post<{ id: number | string }>('/org/activities', data),
   updateActivity: (id: number | string, data: SaveActivityPayload) =>
     http.put<void>(`/org/activities/${id}`, data),
   submitActivity: (id: number | string) => http.post<void>(`/org/activities/${id}/submit`, {}),

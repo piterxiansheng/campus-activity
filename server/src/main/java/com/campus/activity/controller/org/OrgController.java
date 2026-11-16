@@ -48,9 +48,10 @@ public class OrgController {
     }
 
     @PostMapping("/activities")
-    public Result<Map<String, Long>> create(@Valid @RequestBody ActivitySaveRequest request) {
+    public Result<Map<String, String>> create(@Valid @RequestBody ActivitySaveRequest request) {
         Long id = activityService.create(UserContext.get(), request);
-        return Result.ok(Map.of("id", id));
+        // 雪花 ID 为 19 位超大整数，超出 JS 安全整数范围，以字符串返回避免前端 Number 丢精度
+        return Result.ok(Map.of("id", String.valueOf(id)));
     }
 
     @PutMapping("/activities/{id}")
