@@ -18,6 +18,7 @@ const routes: RouteRecordRaw[] = [
     children: [
       { path: 'dashboard', name: 'dashboard', component: () => import('@/views/dashboard/index.vue'), meta: { title: '工作台' } },
       { path: 'audit', name: 'audit', component: () => import('@/views/audit/index.vue'), meta: { title: '活动审核' } },
+      { path: 'activity', name: 'activity', component: () => import('@/views/activity/index.vue'), meta: { title: '活动管理' } },
     ]
   },
   { path: '/:pathMatch(.*)*', redirect: '/dashboard' }
