@@ -1,5 +1,6 @@
 import { createRouter, createWebHashHistory, type RouteRecordRaw } from 'vue-router'
 import { getToken } from '@/api/request'
+import Layout from '@/layout/index.vue'
 
 declare module 'vue-router' {
   interface RouteMeta {
@@ -10,7 +11,15 @@ declare module 'vue-router' {
 
 const routes: RouteRecordRaw[] = [
   { path: '/login', name: 'login', component: () => import('@/views/login/index.vue'), meta: { title: '登录', public: true } },
-  { path: '/:pathMatch(.*)*', redirect: '/login' }
+  {
+    path: '/',
+    component: Layout,
+    redirect: '/dashboard',
+    children: [
+      { path: 'dashboard', name: 'dashboard', component: () => import('@/views/dashboard/index.vue'), meta: { title: '工作台' } },
+    ]
+  },
+  { path: '/:pathMatch(.*)*', redirect: '/dashboard' }
 ]
 
 const router = createRouter({ history: createWebHashHistory(), routes })
