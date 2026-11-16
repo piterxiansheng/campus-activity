@@ -27,6 +27,26 @@
       }
     },
     {
+      "path": "pages/message/list",
+      "style": {
+        "navigationBarTitleText": "消息",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/mine/index",
+      "style": {
+        "navigationBarTitleText": "我的"
+      }
+    },
+    {
+      "path": "pages/mine/signups",
+      "style": {
+        "navigationBarTitleText": "我的报名",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
       "path": "pages/auth/bind",
       "style": {
         "navigationBarTitleText": "绑定学号"
@@ -44,5 +64,37 @@
     "navigationBarTitleText": "校园活动",
     "navigationBarBackgroundColor": "#ffffff",
     "backgroundColor": "#f5f6f8"
+  },
+  "tabBar": {
+    "color": "#8a8f99",
+    "selectedColor": "#1f6feb",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "static/tabbar/home.png",
+        "selectedIconPath": "static/tabbar/home-active.png"
+      },
+      {
+        "pagePath": "pages/activity/list",
+        "text": "活动",
+        "iconPath": "static/tabbar/activity.png",
+        "selectedIconPath": "static/tabbar/activity-active.png"
+      },
+      {
+        "pagePath": "pages/message/list",
+        "text": "消息",
+        "iconPath": "static/tabbar/message.png",
+        "selectedIconPath": "static/tabbar/message-active.png"
+      },
+      {
+        "pagePath": "pages/mine/index",
+        "text": "我的",
+        "iconPath": "static/tabbar/mine.png",
+        "selectedIconPath": "static/tabbar/mine-active.png"
+      }
+    ]
   }
 }
