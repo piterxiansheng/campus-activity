@@ -63,6 +63,13 @@
       "style": {
         "navigationBarTitleText": "扫码签到"
       }
+    },
+    {
+      "path": "pages/org/index",
+      "style": {
+        "navigationBarTitleText": "组织者工作台",
+        "enablePullDownRefresh": true
+      }
     }
   ],
   "globalStyle": {
