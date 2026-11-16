@@ -70,6 +70,12 @@
         "navigationBarTitleText": "组织者工作台",
         "enablePullDownRefresh": true
       }
+    },
+    {
+      "path": "pages/org/edit",
+      "style": {
+        "navigationBarTitleText": "发布活动"
+      }
     }
   ],
   "globalStyle": {
