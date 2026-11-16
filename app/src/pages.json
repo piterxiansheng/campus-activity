@@ -25,6 +25,18 @@
       "style": {
         "navigationBarTitleText": "填写报名信息"
       }
+    },
+    {
+      "path": "pages/auth/bind",
+      "style": {
+        "navigationBarTitleText": "绑定学号"
+      }
+    },
+    {
+      "path": "pages/auth/login",
+      "style": {
+        "navigationBarTitleText": "手机号登录"
+      }
     }
   ],
   "globalStyle": {
